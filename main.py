@@ -5,7 +5,7 @@ import psycopg2
 
 
 #sqlalchemy ile postgresqle bağlanıldığı kısım
-engine = db.create_engine('postgresql://postgres:alieken@localhost/amazon')
+engine = db.create_engine('(postgresqladresiniz)')
 connection = engine.connect()
 metadata = db.MetaData()
 tablo = db.Table('kategoribilgileri', metadata, autoload=True, autoload_with=engine)
